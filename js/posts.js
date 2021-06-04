@@ -1,6 +1,7 @@
 const url = 'https://exam-api.wibedev.com/wp-json/wp/v2/posts/';
 const postsContainer = document.querySelector('.posts');
-const loadMore = document.querySelector("#moreResults");
+const loadMore = document.querySelector('#moreResults');
+const searchBar = document.querySelector('#searchBar');
 
 let length = 10;
 let offset = 0;
@@ -36,7 +37,6 @@ function createHTML(posts) {
    
     for (let i = 0; i < posts.length; i++) {
 
-        
         postsContainer.innerHTML += `<a href="spesific-post.html?id=${posts[i].id}" class="card">
                                         <div class="image" style="background-image: url(${posts[i].better_featured_image.source_url})"></div>
                                         <div class="preview">
@@ -47,6 +47,14 @@ function createHTML(posts) {
                                         </div>
                                     </a>`;
     }
+
+    searchBar.addEventListener('keyup', (e) => {
+        const searchWord = e.target.value;
+        const filteredPosts = posts.filter(post => {
+            return post.title.rendered.contains(searchWord);
+        });
+    });
+    
 
 
 }

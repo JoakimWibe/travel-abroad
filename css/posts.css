@@ -7,8 +7,11 @@ hr {
   margin: 0 20px;
 }
 
-.bookmark {
+.menu {
+  display: flex;
+  flex-direction: row;
   margin: 20px;
+  justify-content: space-between;
 }
 
 .bookmark a {
@@ -73,7 +76,7 @@ h1,
     margin: 0 250px;
   }
 
-  .bookmark {
+  .menu {
     margin: 20px 250px;
   }
 
@@ -107,7 +110,7 @@ h1,
     margin: 0 400px;
   }
 
-  .bookmark {
+  .menu {
     margin: 20px 400px;
   }
 
