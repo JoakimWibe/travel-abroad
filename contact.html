@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the page where you can contact Travel Abroad">
+    <title>Travel Abroad | Contact</title>
+    <script src="https://kit.fontawesome.com/6d561979ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <a href="index.html"><img src="img/local/logo.png" alt="Travel Abroad with a globus in between the words" class="logo"></a>
+            <div class="socials">
+                <a href="http://www.instagram.com"><i class="fa fa-instagram" id="instagram"></i></a>
+                <a href="http://www.twitter.com"><i class="fa fa-twitter" id="twitter"></i></a>
+                <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p" id="pinterest"></i></a>
+                <a href="http://www.facebook.com"><i class="fa fa-facebook" id="facebook"></i></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+   <h1>Contact</h1>
+   <p>Your request will be awnsered as quick as possible.</p>
+    <div class="card">
+        <form id=contactForm>
+
+            <div>
+                <label class="form-label">
+                    Name
+                    <input type="text" Name="name" id="name" placeholder="Minimum 5 characters" />
+                    <div class="form-error" id="nameError">Name must contain at least 5 characters</div>
+                </label>
+            </div>
+
+            <div>
+                <label class="form-label">
+                    Email
+                    <input type="email" Name="email" id="email" placeholder="Please enter a valid email"/>
+                    <div class="form-error" id="emailError">Please enter a valid email</div>
+                </label>
+            </div>
+
+            <div>
+                <label class="form-label">
+                    Subject
+                    <input type="text" Name="subject" id="subject" placeholder="Minimum 15 characters" />
+                    <div class="form-error" id="subjectError">Subject should contain at least 15 characters</div>
+                </label>
+            </div>
+
+            <div>
+                <label class=form-label>
+                    Message
+                    <textarea type="text" name="message" rows="10" cols="30" id="message" class="form__input" placeholder="Minimum 25 characters"></textarea>
+                    <div class="form-error" id="messageError">The message should contain at least 25 characters</div>
+                </label>
+            </div>
+
+            <button class="submit-btn">Submit</button>
+
+            <div id="success">
+                <p>Sent!</p>
+            </div>
+
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="socials-footer">
+                <div class="socials-container">
+                    <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                    <h3>Instagram</h3>
+                </div>
+                <div class="socials-container">
+                    <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                    <h3>Twitter</h3>
+                </div>
+                <div class="socials-container">
+                    <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p"></i></a>
+                    <h3>Pinterest</h3>
+                </div>
+                <div class="socials-container">
+                    <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                    <h3>Facebook</h3>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="posts.html">Posts</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Stay in touch with us:</h3>
+                <h3>travel-abroad@outlook.com</h3>
+                <h3>+470985678</h3>
+                <h3>3050  Diamond Street, NC</h3>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright Travel Abroad 2021. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/components/dropdown.js"></script>
+</body>
+</html>

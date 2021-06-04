@@ -1,0 +1,143 @@
+h1 {
+  padding-top: 40vh;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 50px 20px 0 20px;
+}
+
+.banner {
+  background: url(../img/local/home-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+.banner p {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.scroll-btn {
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.7;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -17px;
+}
+
+.container {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.carousel {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  height: 100%;
+  display: flex;
+  width: 800%;
+  transition: all 0.3s;
+}
+
+.card {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #292828;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 150px;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.controls i {
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  font-size: 48px;
+  color: #292828;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+.inspired {
+  background: #597c5b;
+  padding: 20px;
+}
+
+.inspired a {
+  text-decoration: none;
+}
+
+.inspired h2,
+.inspired p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.inspired h2 {
+  margin: 0 0 20px 0;
+  text-align: start;
+}
+
+.inspired-banner {
+  background: url(../img/local/inspired.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .inspired-banner {
+    min-height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    background: transparent;
+  }
+
+  .slider {
+    width: 200%;
+  }
+
+  .inspired {
+    background: #597c5b;
+    padding: 80px 160px;
+  }
+
+  .inspired-banner {
+    min-height: 300px;
+  }
+}

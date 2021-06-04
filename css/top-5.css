@@ -1,0 +1,59 @@
+h1 {
+  margin: 20px;
+}
+
+.bookmark {
+  margin: 100px 20px 0 20px;
+}
+
+.bookmark a {
+  color: #292929;
+  text-decoration: none;
+}
+
+.banner {
+  background: url(../img/local/inspired.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  background-position: center;
+  margin: 20px 20px 0 20px;
+}
+
+.top-5 {
+  margin: 20px;
+}
+
+.list-item {
+  margin: 40px 0;
+}
+
+.location-image {
+  margin: 20px 0;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    margin: 20px 250px;
+  }
+
+  .bookmark {
+    margin: 100px 250px 0 250px;
+  }
+  .banner {
+    min-height: 300px;
+    margin: 20px 250px 0 250px;
+  }
+
+  .top-5 {
+    margin: 20px 250px;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}

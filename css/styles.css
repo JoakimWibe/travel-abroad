@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #fff;
+}
+
+/* ============ 
+   Navbar
+   ============ */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background: #597c5b;
+}
+
+nav.active {
+  background: #597c5b;
+}
+
+.logo {
+  height: 40px;
+  margin: 17px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  float: right;
+  display: inline;
+  color: #fff;
+  border-left: 3px solid #fff;
+  margin: 23px;
+}
+
+#instagram,
+#twitter,
+#facebook,
+#pinterest {
+  font-size: 2rem;
+  color: #fff;
+  margin-left: 50px;
+}
+
+#instagram {
+  margin-left: 70px;
+}
+
+#facebook {
+  margin-right: 40px;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-out;
+  background: #fff;
+}
+
+/* ============ 
+   footer
+   ============ */
+
+footer {
+  background: #292828;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-height: 300px;
+}
+
+.socials-footer {
+  margin-top: 50px;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 10px 0;
+}
+
+.socials-container a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.socials-container h3 {
+  margin: 8px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px 0 20px 0;
+  border-top: 1px solid #fff;
+}
+
+.footer-nav {
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 10px 0 10px 0;
+}
+
+.footer-contact {
+  margin-top: 50px;
+}
+
+.footer-contact h3 {
+  margin: 20px 0 20px 0;
+}
+
+/* ============ 
+   loader
+   ============ */
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #597c5b;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 100px auto;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1444px) {
+  .socials {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* ============ 
+   Navbar
+   ============ */
+
+  nav {
+    background: #597c5b;
+  }
+
+  ul {
+    background: #292828;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  ul.active {
+    background: #292828;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -0%;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 32%;
+    right: 5%;
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+    transform: translate(5%, 20%);
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* ============ 
+   footer
+   ============ */
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials-footer {
+    display: none;
+  }
+
+  .footer-nav {
+    margin-top: 20px;
+  }
+
+  .footer-nav a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin: 10px 0 10px 0;
+  }
+
+  .footer-contact {
+    margin-top: 0;
+  }
+
+  .footer-contact h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+}

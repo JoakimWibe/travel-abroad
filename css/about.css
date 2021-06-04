@@ -1,0 +1,60 @@
+.bookmark {
+  margin: 100px 20px 0 20px;
+}
+
+.bookmark a {
+  text-decoration: none;
+  color: #292828;
+}
+
+.banner {
+  padding: 10em;
+  height: 100%;
+  background-image: url(../img/local/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 20px 0 20px;
+}
+
+h1,
+.text-area {
+  margin: 20px;
+}
+
+.text-area p {
+  margin: 20px 0;
+}
+
+@media (min-width: 1024px) {
+  .bookmark {
+    margin: 100px 250px 0 250px;
+  }
+  .banner {
+    margin: 20px 250px 0 250px;
+  }
+
+  h1,
+  .about {
+    margin: 20px 250px;
+  }
+
+  .text-area {
+    margin: 0 0 40px 0;
+  }
+}
+
+@media (min-width: 1444px) {
+  .bookmark {
+    margin: 100px 400px 0 400px;
+  }
+
+  .banner {
+    margin: 20px 400px 0 400px;
+  }
+
+  h1,
+  .about {
+    margin: 20px 400px;
+  }
+}

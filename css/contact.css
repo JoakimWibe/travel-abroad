@@ -1,0 +1,100 @@
+h1 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.card {
+  margin: 0 auto;
+}
+
+#contactForm {
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+}
+
+form div {
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #645a5a;
+  font-family: "lato", sans-serif;
+}
+
+.form-error {
+  color: red;
+  display: none;
+}
+
+.submit-btn {
+  font-family: Montserrat, sans-serif;
+  background: #597c5b;
+  border: none;
+  width: 300px;
+  padding: 1.5em 1em;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 0.2em;
+}
+
+.submit-btn:hover {
+  background: white;
+  border: 3px solid #597c5b;
+  color: #597c5b;
+}
+
+#success {
+  border: 2px solid #00ff00;
+  width: 300px;
+  padding: 10px;
+  display: none;
+}
+
+#success p {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin-top: 150px;
+  }
+
+  p {
+    max-width: 350px;
+  }
+
+  .card {
+    margin: 50px auto;
+    height: 900px;
+    width: 600px;
+  }
+
+  #contactForm {
+    max-width: 350px;
+  }
+
+  .submit-btn {
+    width: 350px;
+  }
+
+  #success {
+    width: 350px;
+  }
+}

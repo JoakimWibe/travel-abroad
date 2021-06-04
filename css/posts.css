@@ -1,0 +1,119 @@
+h1 {
+  color: #292828;
+  margin-top: 150px;
+}
+
+hr {
+  margin: 0 20px;
+}
+
+.bookmark {
+  margin: 20px;
+}
+
+.bookmark a {
+  color: #292828;
+  text-decoration: none;
+}
+
+.card {
+  color: #292828;
+  text-decoration: none;
+  margin: 50px 0;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  margin: 20px 20px 0 20px;
+}
+
+h1,
+.preview,
+.more-results {
+  padding: 0 20px;
+}
+
+.title {
+  margin: 20px 0 20px 0;
+}
+
+.date,
+.preview-text,
+.image,
+.read-more {
+  margin-bottom: 20px;
+}
+
+.read-more {
+  color: blue;
+  text-decoration: underline;
+}
+
+.more-results {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+#arrowDown {
+  margin: 2px 5px;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    margin-top: 150px;
+  }
+
+  hr {
+    margin: 0 250px;
+  }
+
+  .bookmark {
+    margin: 20px 250px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image {
+    grid-area: 1 / 1;
+    margin: 0;
+  }
+
+  .preview {
+    grid-area: 1 / 2;
+  }
+
+  h1,
+  .more-results,
+  .card {
+    padding: 0 250px;
+  }
+
+  .title {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (min-width: 1444px) {
+  hr {
+    margin: 0 400px;
+  }
+
+  .bookmark {
+    margin: 20px 400px;
+  }
+
+  h1,
+  .more-results,
+  .card {
+    padding: 0 400px;
+  }
+}
