@@ -26,31 +26,19 @@ h1,
   margin: 20px 0;
 }
 
-@media (min-width: 1024px) {
-  .bookmark {
-    margin: 100px 250px 0 250px;
-  }
-  .banner {
-    margin: 20px 250px 0 250px;
-  }
-
-  h1,
-  .about {
-    margin: 20px 250px;
-  }
-
-  .text-area {
-    margin: 0 0 40px 0;
-  }
-}
-
-@media (min-width: 1444px) {
+@media (min-width: 768px) {
   .bookmark {
     margin: 100px auto 0 auto;
   }
-
   .banner {
     margin: 20px auto 0 auto;
+  }
+
+  .bookmark,
+  .banner,
+  h1,
+  .about {
+    max-width: 700px;
   }
 
   h1,
@@ -58,10 +46,7 @@ h1,
     margin: 20px auto;
   }
 
-  .bookmark,
-  .banner,
-  .about,
-  h1 {
-    max-width: 800px;
+  .text-area {
+    margin: 0 0 40px 0;
   }
 }
