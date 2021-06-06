@@ -46,15 +46,22 @@ h1,
 
 @media (min-width: 1444px) {
   .bookmark {
-    margin: 100px 400px 0 400px;
+    margin: 100px auto 0 auto;
   }
 
   .banner {
-    margin: 20px 400px 0 400px;
+    margin: 20px auto 0 auto;
   }
 
   h1,
   .about {
-    margin: 20px 400px;
+    margin: 20px auto;
+  }
+
+  .bookmark,
+  .banner,
+  .about,
+  h1 {
+    max-width: 800px;
   }
 }

@@ -27,4 +27,3 @@ rightArrow.addEventListener('click', function() {
     }
 }); 
 
-
